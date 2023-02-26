@@ -15,6 +15,21 @@ public class AuthorizationService {
     private static final Logger LOG = LoggerFactory.getLogger(AuthorizationService.class);
     private List<Authorization> authorizations = new ArrayList<>();
 
+    public List<Authorization> findAllTest() {
+        LOG.info("Criando massa..");
+        var massa = UUID.randomUUID();
+        LOG.info("Masssa: "+ massa.toString());
+
+        LOG.info("Inserindo massa..");
+        create(massa);
+
+        LOG.info("Buscando massa..");
+        var values = findAll();
+
+        LOG.info("Function findAll() -> Tamanho da massa: " + values.size());
+        return values;
+    }
+
     public List<Authorization> findAll() {
         LOG.info("FindAll Requested.");
         return authorizations;
