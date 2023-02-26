@@ -48,6 +48,18 @@ Console -> Lambda -> URL da Função
 
 ---
 
+Lambda -> Código -> Manipulador
+
+Com Api:
+>org.springframework.cloud.function.adapter.aws.FunctionInvoker::handleRequest
+
+Com Evento:
+>com.example.resiliencia.functions.ResilienciaFunction::findAll
+
+---
+
+---
+
 Tutorials:
 
 https://tanzu.vmware.com/developer/guides/serverless-spring/

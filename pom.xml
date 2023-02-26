@@ -40,6 +40,10 @@
 		</dependency>
 		<!--	Spring Cloud With API	-->
 
+		<!--	Connect To DB	-->
+
+		<!--	Connect To DB	-->
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
